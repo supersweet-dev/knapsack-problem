@@ -1,0 +1,23 @@
+Part 1:
+Given a function dict(string) that returns true if the string is a valid word
+and false otherwise, create an algorithm to check if a sequence of characters can
+be divided into valid words. Dyanmic Approach:
+create an array of size equal to the length of your string
+looping from 0 to the size of the string, check if the substring from the last
+previously chosen string ending (starting at 0) would be in the dictionary
+if it is, record the choice in the corresponding spot in the array
+
+Part 2:
+
+Part 3:
+see attached program 
+for a target number k, from a set of n integers find the subset which sum most closely
+approaches k.
+-first, we create a table of size n*k and initialize all the elements to an empty object
+holding an empty list and a value 0.
+-we loop through our table, filling out each spot with the optimal sum for that size.
+-we begin looping from 0 to n, and for each iteration we loop from 0 to k
+thus we visit each spot in our table.
+-for each spot we check if we are at n 0 or k 0 as our base case, and we make sure that spot is empty.
+we reset it to an empty list and a value 0.
+-otherwise we check if our item n-1 is smaller or equal to our current k, which means it could fit here
